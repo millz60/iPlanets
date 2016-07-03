@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:3.0f/255.0f green:88.0f/255.0f blue:131.0f/255.0f alpha:1.0f]];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                          [UIFont fontWithName:@"Apple SD Gothic Neo" size:21.0], NSFontAttributeName,nil]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+
+    
     return YES;
 }
 

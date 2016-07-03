@@ -13,6 +13,17 @@
 		C9286B1F1D286D9D00F08C35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9286B1D1D286D9D00F08C35 /* Main.storyboard */; };
 		C9286B211D286D9D00F08C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9286B201D286D9D00F08C35 /* Assets.xcassets */; };
 		C9286B241D286D9D00F08C35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9286B221D286D9D00F08C35 /* LaunchScreen.storyboard */; };
+		C9286B331D2890AE00F08C35 /* PlanetListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9286B321D2890AE00F08C35 /* PlanetListTableViewController.m */; };
+		C9286B361D28915100F08C35 /* Planet.m in Sources */ = {isa = PBXBuildFile; fileRef = C9286B351D28915100F08C35 /* Planet.m */; };
+		C9286B3A1D28926200F08C35 /* Mars.m in Sources */ = {isa = PBXBuildFile; fileRef = C9286B391D28926200F08C35 /* Mars.m */; };
+		C9286B3D1D28945A00F08C35 /* Earth.m in Sources */ = {isa = PBXBuildFile; fileRef = C9286B3C1D28945A00F08C35 /* Earth.m */; };
+		C9286B401D28950800F08C35 /* Jupiter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9286B3F1D28950800F08C35 /* Jupiter.m */; };
+		C9286B431D28997300F08C35 /* PlanetInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9286B421D28997300F08C35 /* PlanetInformationViewController.m */; };
+		C9286B461D28F61600F08C35 /* Mercury.m in Sources */ = {isa = PBXBuildFile; fileRef = C9286B451D28F61600F08C35 /* Mercury.m */; };
+		C9286B491D28F70300F08C35 /* Venus.m in Sources */ = {isa = PBXBuildFile; fileRef = C9286B481D28F70300F08C35 /* Venus.m */; };
+		C9286B4D1D28F8B000F08C35 /* Saturn.m in Sources */ = {isa = PBXBuildFile; fileRef = C9286B4C1D28F8B000F08C35 /* Saturn.m */; };
+		C9286B501D28FDD700F08C35 /* Uranus.m in Sources */ = {isa = PBXBuildFile; fileRef = C9286B4F1D28FDD700F08C35 /* Uranus.m */; };
+		C9286B531D28FF3500F08C35 /* Neptune.m in Sources */ = {isa = PBXBuildFile; fileRef = C9286B521D28FF3500F08C35 /* Neptune.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +37,28 @@
 		C9286B201D286D9D00F08C35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9286B231D286D9D00F08C35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9286B251D286D9D00F08C35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9286B311D2890AE00F08C35 /* PlanetListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanetListTableViewController.h; sourceTree = "<group>"; };
+		C9286B321D2890AE00F08C35 /* PlanetListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanetListTableViewController.m; sourceTree = "<group>"; };
+		C9286B341D28915100F08C35 /* Planet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Planet.h; sourceTree = "<group>"; };
+		C9286B351D28915100F08C35 /* Planet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Planet.m; sourceTree = "<group>"; };
+		C9286B381D28926200F08C35 /* Mars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mars.h; sourceTree = "<group>"; };
+		C9286B391D28926200F08C35 /* Mars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mars.m; sourceTree = "<group>"; };
+		C9286B3B1D28945A00F08C35 /* Earth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Earth.h; sourceTree = "<group>"; };
+		C9286B3C1D28945A00F08C35 /* Earth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Earth.m; sourceTree = "<group>"; };
+		C9286B3E1D28950800F08C35 /* Jupiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jupiter.h; sourceTree = "<group>"; };
+		C9286B3F1D28950800F08C35 /* Jupiter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jupiter.m; sourceTree = "<group>"; };
+		C9286B411D28997300F08C35 /* PlanetInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanetInformationViewController.h; sourceTree = "<group>"; };
+		C9286B421D28997300F08C35 /* PlanetInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanetInformationViewController.m; sourceTree = "<group>"; };
+		C9286B441D28F61600F08C35 /* Mercury.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mercury.h; sourceTree = "<group>"; };
+		C9286B451D28F61600F08C35 /* Mercury.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mercury.m; sourceTree = "<group>"; };
+		C9286B471D28F70300F08C35 /* Venus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venus.h; sourceTree = "<group>"; };
+		C9286B481D28F70300F08C35 /* Venus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venus.m; sourceTree = "<group>"; };
+		C9286B4B1D28F8B000F08C35 /* Saturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Saturn.h; sourceTree = "<group>"; };
+		C9286B4C1D28F8B000F08C35 /* Saturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Saturn.m; sourceTree = "<group>"; };
+		C9286B4E1D28FDD700F08C35 /* Uranus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Uranus.h; path = ../Uranus.h; sourceTree = "<group>"; };
+		C9286B4F1D28FDD700F08C35 /* Uranus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Uranus.m; path = ../Uranus.m; sourceTree = "<group>"; };
+		C9286B511D28FF3500F08C35 /* Neptune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neptune.h; sourceTree = "<group>"; };
+		C9286B521D28FF3500F08C35 /* Neptune.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Neptune.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +77,7 @@
 			children = (
 				C9286B131D286D9D00F08C35 /* TableViewProtocolsDelegates */,
 				C9286B121D286D9D00F08C35 /* Products */,
+				C9286B371D28923200F08C35 /* Planets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +101,8 @@
 				C9286B221D286D9D00F08C35 /* LaunchScreen.storyboard */,
 				C9286B251D286D9D00F08C35 /* Info.plist */,
 				C9286B141D286D9D00F08C35 /* Supporting Files */,
+				C9286B311D2890AE00F08C35 /* PlanetListTableViewController.h */,
+				C9286B321D2890AE00F08C35 /* PlanetListTableViewController.m */,
 			);
 			path = TableViewProtocolsDelegates;
 			sourceTree = "<group>";
@@ -77,6 +113,34 @@
 				C9286B151D286D9D00F08C35 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9286B371D28923200F08C35 /* Planets */ = {
+			isa = PBXGroup;
+			children = (
+				C9286B411D28997300F08C35 /* PlanetInformationViewController.h */,
+				C9286B421D28997300F08C35 /* PlanetInformationViewController.m */,
+				C9286B341D28915100F08C35 /* Planet.h */,
+				C9286B351D28915100F08C35 /* Planet.m */,
+				C9286B511D28FF3500F08C35 /* Neptune.h */,
+				C9286B521D28FF3500F08C35 /* Neptune.m */,
+				C9286B381D28926200F08C35 /* Mars.h */,
+				C9286B391D28926200F08C35 /* Mars.m */,
+				C9286B3B1D28945A00F08C35 /* Earth.h */,
+				C9286B3C1D28945A00F08C35 /* Earth.m */,
+				C9286B3E1D28950800F08C35 /* Jupiter.h */,
+				C9286B3F1D28950800F08C35 /* Jupiter.m */,
+				C9286B441D28F61600F08C35 /* Mercury.h */,
+				C9286B451D28F61600F08C35 /* Mercury.m */,
+				C9286B471D28F70300F08C35 /* Venus.h */,
+				C9286B481D28F70300F08C35 /* Venus.m */,
+				C9286B4B1D28F8B000F08C35 /* Saturn.h */,
+				C9286B4C1D28F8B000F08C35 /* Saturn.m */,
+				C9286B4E1D28FDD700F08C35 /* Uranus.h */,
+				C9286B4F1D28FDD700F08C35 /* Uranus.m */,
+			);
+			name = Planets;
+			path = TableViewProtocolsDelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +213,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9286B4D1D28F8B000F08C35 /* Saturn.m in Sources */,
+				C9286B531D28FF3500F08C35 /* Neptune.m in Sources */,
+				C9286B3A1D28926200F08C35 /* Mars.m in Sources */,
+				C9286B461D28F61600F08C35 /* Mercury.m in Sources */,
+				C9286B361D28915100F08C35 /* Planet.m in Sources */,
+				C9286B431D28997300F08C35 /* PlanetInformationViewController.m in Sources */,
 				C9286B1C1D286D9D00F08C35 /* ViewController.m in Sources */,
+				C9286B501D28FDD700F08C35 /* Uranus.m in Sources */,
+				C9286B331D2890AE00F08C35 /* PlanetListTableViewController.m in Sources */,
 				C9286B191D286D9D00F08C35 /* AppDelegate.m in Sources */,
 				C9286B161D286D9D00F08C35 /* main.m in Sources */,
+				C9286B3D1D28945A00F08C35 /* Earth.m in Sources */,
+				C9286B401D28950800F08C35 /* Jupiter.m in Sources */,
+				C9286B491D28F70300F08C35 /* Venus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +377,7 @@
 				C9286B2A1D286D9D00F08C35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

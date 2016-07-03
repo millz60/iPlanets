@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IfP-Wt-yLs">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--iPlanets Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,235 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPlanets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E43-bW-Sxf">
+                                <rect key="frame" x="233" y="246" width="132" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="9Pf-5F-69i"/>
+                                    <constraint firstAttribute="height" constant="34" id="U7R-j7-zbE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3D_Earth" translatesAutoresizingMaskIntoConstraints="NO" id="Yth-1R-gxJ">
+                                <rect key="frame" x="237" y="113" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="DIx-ti-JTV"/>
+                                    <constraint firstAttribute="width" secondItem="Yth-1R-gxJ" secondAttribute="height" multiplier="1:1" id="xlt-M6-Lbh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liftoff Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCA-id-aBX">
+                                <rect key="frame" x="217" y="353" width="164" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="09l-ZN-IcW"/>
+                                    <constraint firstAttribute="height" constant="34" id="bD4-r3-CAV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-UltraLight" family="Apple SD Gothic Neo" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGg-j1-FhJ">
+                                <rect key="frame" x="208" y="448" width="183" height="45"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="27"/>
+                                <state key="normal" title="Favorites">
+                                    <color key="titleColor" red="1" green="0.85592324210000004" blue="0.088734132849999994" alpha="0.90793993790000005" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBA-nC-ywS">
+                                <rect key="frame" x="208" y="395" width="183" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="rhc-tT-ynl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="27"/>
+                                <state key="normal" title="Planet List">
+                                    <color key="titleColor" red="1" green="0.85592324210000004" blue="0.088734132849999994" alpha="0.90793993790000005" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ecp-Dh-61j" kind="show" identifier="PlanetListSegue" id="99P-ey-NGI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DBA-nC-ywS" firstAttribute="leading" secondItem="kGg-j1-FhJ" secondAttribute="leading" id="I0A-zo-LDa"/>
+                            <constraint firstItem="CCA-id-aBX" firstAttribute="top" secondItem="E43-bW-Sxf" secondAttribute="bottom" constant="73" id="IDP-7A-otU"/>
+                            <constraint firstItem="kGg-j1-FhJ" firstAttribute="top" secondItem="DBA-nC-ywS" secondAttribute="bottom" constant="8" symbolic="YES" id="JbT-kT-BgE"/>
+                            <constraint firstItem="Yth-1R-gxJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LoL-5G-PXF"/>
+                            <constraint firstItem="DBA-nC-ywS" firstAttribute="top" secondItem="CCA-id-aBX" secondAttribute="bottom" constant="8" symbolic="YES" id="Ol9-W4-zQC"/>
+                            <constraint firstItem="DBA-nC-ywS" firstAttribute="centerX" secondItem="CCA-id-aBX" secondAttribute="centerX" id="U1M-rf-vJz"/>
+                            <constraint firstItem="Yth-1R-gxJ" firstAttribute="centerX" secondItem="E43-bW-Sxf" secondAttribute="centerX" id="Y80-Ry-wxJ"/>
+                            <constraint firstItem="E43-bW-Sxf" firstAttribute="top" secondItem="Yth-1R-gxJ" secondAttribute="bottom" constant="8" symbolic="YES" id="c2b-P4-dWN"/>
+                            <constraint firstItem="E43-bW-Sxf" firstAttribute="centerX" secondItem="CCA-id-aBX" secondAttribute="centerX" id="hMd-hb-X72"/>
+                            <constraint firstItem="Yth-1R-gxJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="oIG-rp-HyC"/>
+                            <constraint firstItem="DBA-nC-ywS" firstAttribute="trailing" secondItem="kGg-j1-FhJ" secondAttribute="trailing" id="s8s-mv-Sye"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="iPlanets Home" id="ZF6-iA-gMq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1471" y="240"/>
+        </scene>
+        <!--Planet List Table View Controller-->
+        <scene sceneID="w1h-3E-MRa">
+            <objects>
+                <tableViewController id="ecp-Dh-61j" customClass="PlanetListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gc2-8L-9hx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlanetListCell" id="sDn-zI-nmj">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sDn-zI-nmj" id="QBk-JK-Ur3">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="dcU-Mb-bGW" kind="show" id="bRa-Zs-t2o"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ecp-Dh-61j" id="TlD-2Z-WDw"/>
+                            <outlet property="delegate" destination="ecp-Dh-61j" id="YUT-8w-gq4"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d2Y-LX-gi0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2239" y="240"/>
+        </scene>
+        <!--Planet Information View Controller-->
+        <scene sceneID="ORb-0S-fTj">
+            <objects>
+                <viewController id="dcU-Mb-bGW" customClass="PlanetInformationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DFF-gr-gie"/>
+                        <viewControllerLayoutGuide type="bottom" id="Byi-8c-qeT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6tQ-Qb-dHl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jq8-VF-tDY">
+                                <rect key="frame" x="180" y="72" width="240" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="KbD-Es-hcb"/>
+                                    <constraint firstAttribute="height" constant="47" id="Q6P-S1-Njd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet Subtitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lf0-8g-Lix">
+                                <rect key="frame" x="180" y="97" width="240" height="47"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3D_Earth" translatesAutoresizingMaskIntoConstraints="NO" id="t94-h9-JtH">
+                                <rect key="frame" x="238" y="152" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="t94-h9-JtH" secondAttribute="height" multiplier="1:1" id="33J-s4-8Uk"/>
+                                    <constraint firstAttribute="width" secondItem="t94-h9-JtH" secondAttribute="height" multiplier="1:1" id="vji-VL-wll"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance From the Sun:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUa-u6-s5K">
+                                <rect key="frame" x="197" y="389" width="206" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="hHP-oV-DFa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance From Earth:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4b-Ph-zrB">
+                                <rect key="frame" x="197" y="312" width="206" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="cYK-jr-wef"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99.99 Million Miles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve3-vh-b3g">
+                                <rect key="frame" x="155" y="342" width="290" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="aEV-aY-v3o"/>
+                                    <constraint firstAttribute="width" constant="290" id="oOg-0j-dsS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99.99 Million Miles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOC-ib-E1J">
+                                <rect key="frame" x="155" y="421" width="290" height="39"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t94-h9-JtH" firstAttribute="top" secondItem="jq8-VF-tDY" secondAttribute="bottom" constant="33" id="3Sy-68-QPa"/>
+                            <constraint firstItem="ve3-vh-b3g" firstAttribute="trailing" secondItem="aOC-ib-E1J" secondAttribute="trailing" id="ACc-8q-kWP"/>
+                            <constraint firstItem="D4b-Ph-zrB" firstAttribute="centerX" secondItem="t94-h9-JtH" secondAttribute="centerX" id="Cfv-D3-jdh"/>
+                            <constraint firstItem="yUa-u6-s5K" firstAttribute="top" secondItem="ve3-vh-b3g" secondAttribute="bottom" constant="8" symbolic="YES" id="FbM-u1-SYe"/>
+                            <constraint firstItem="ve3-vh-b3g" firstAttribute="top" secondItem="t94-h9-JtH" secondAttribute="bottom" constant="65" id="MXP-RD-9ek"/>
+                            <constraint firstItem="jq8-VF-tDY" firstAttribute="trailing" secondItem="Lf0-8g-Lix" secondAttribute="trailing" id="N9M-si-xBR"/>
+                            <constraint firstItem="Lf0-8g-Lix" firstAttribute="centerX" secondItem="t94-h9-JtH" secondAttribute="centerX" id="PtF-Vh-nvV"/>
+                            <constraint firstItem="aOC-ib-E1J" firstAttribute="top" secondItem="ve3-vh-b3g" secondAttribute="bottom" constant="40" id="SP3-pA-TQr"/>
+                            <constraint firstItem="t94-h9-JtH" firstAttribute="top" secondItem="Lf0-8g-Lix" secondAttribute="bottom" constant="8" symbolic="YES" id="W6E-dI-fxg"/>
+                            <constraint firstItem="ve3-vh-b3g" firstAttribute="leading" secondItem="aOC-ib-E1J" secondAttribute="leading" id="Yki-ya-MTd"/>
+                            <constraint firstItem="D4b-Ph-zrB" firstAttribute="leading" secondItem="yUa-u6-s5K" secondAttribute="leading" id="bBh-rQ-DlF"/>
+                            <constraint firstItem="Byi-8c-qeT" firstAttribute="top" secondItem="yUa-u6-s5K" secondAttribute="bottom" constant="174" id="bFc-Od-g9n"/>
+                            <constraint firstItem="jq8-VF-tDY" firstAttribute="top" secondItem="DFF-gr-gie" secondAttribute="bottom" constant="8" symbolic="YES" id="dzI-MA-TJB"/>
+                            <constraint firstItem="D4b-Ph-zrB" firstAttribute="top" secondItem="t94-h9-JtH" secondAttribute="bottom" constant="35" id="fZK-FU-fk3"/>
+                            <constraint firstItem="D4b-Ph-zrB" firstAttribute="trailing" secondItem="yUa-u6-s5K" secondAttribute="trailing" id="fgW-uD-dfc"/>
+                            <constraint firstItem="jq8-VF-tDY" firstAttribute="centerX" secondItem="6tQ-Qb-dHl" secondAttribute="centerX" id="gI9-I1-2Xv"/>
+                            <constraint firstItem="yUa-u6-s5K" firstAttribute="top" secondItem="D4b-Ph-zrB" secondAttribute="bottom" constant="30" id="hcV-Ec-seP"/>
+                            <constraint firstItem="Byi-8c-qeT" firstAttribute="top" secondItem="aOC-ib-E1J" secondAttribute="bottom" constant="140" id="lgz-Ih-dV0"/>
+                            <constraint firstItem="D4b-Ph-zrB" firstAttribute="centerX" secondItem="ve3-vh-b3g" secondAttribute="centerX" id="w8u-35-3PH"/>
+                            <constraint firstItem="Lf0-8g-Lix" firstAttribute="top" secondItem="DFF-gr-gie" secondAttribute="bottom" constant="33" id="we5-zS-A6E"/>
+                            <constraint firstItem="jq8-VF-tDY" firstAttribute="leading" secondItem="Lf0-8g-Lix" secondAttribute="leading" id="yS8-cq-Ozq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="distanceFromEarth" destination="ve3-vh-b3g" id="bbg-tP-93g"/>
+                        <outlet property="distanceFromSun" destination="aOC-ib-E1J" id="Z2L-Ny-PAU"/>
+                        <outlet property="planetImage" destination="t94-h9-JtH" id="2hJ-Vo-cwn"/>
+                        <outlet property="planetSubtitle" destination="Lf0-8g-Lix" id="CCf-0D-jYG"/>
+                        <outlet property="planetTitle" destination="jq8-VF-tDY" id="WDo-Je-rqv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJS-CS-thb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3051" y="240"/>
+        </scene>
+        <!--Planet List-->
+        <scene sceneID="jK6-St-GuE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IfP-Wt-yLs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Planet List" id="0uD-bo-x1A"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rv9-z2-YE4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kwI-kr-wqW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uio-jW-6ck" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="240"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="3D_Earth" width="200" height="200"/>
+    </resources>
 </document>
