@@ -19,6 +19,7 @@
     self.distanceFromEarth = 0.0;
     self.planetDescription = @"The Home of Mankind";
     self.imagePath = @"3D_Earth.png";
+    self.isFavorite = @"NO";
     return self;
     
 }

@@ -19,6 +19,7 @@
     self.distanceFromEarth = 48.68;
     self.planetDescription = @"The Small Red Planet";
     self.imagePath = @"3D_Mars.png";
+    self.isFavorite = @"NO";
     return self;
     
 }

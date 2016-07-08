@@ -18,6 +18,7 @@
     self.distanceFromEarth = 1692.66;
     self.planetDescription = @"The Rolling Ice Giant";
     self.imagePath = @"3D_Uranus.png";
+    self.isFavorite = @"NO";
     return self;
     
 }

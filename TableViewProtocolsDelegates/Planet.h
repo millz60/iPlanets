@@ -18,6 +18,7 @@
 @property double distanceFromEarth;
 @property (nonatomic,weak) NSString *imagePath;
 @property (nonatomic,weak) NSString *planetDescription;
+@property (nonatomic,weak) NSString *isFavorite;
 
 
 @end

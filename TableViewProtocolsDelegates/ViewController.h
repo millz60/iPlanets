@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FavoritesTableViewController.h"
 
 @interface ViewController : UIViewController
+
 
 
 @end

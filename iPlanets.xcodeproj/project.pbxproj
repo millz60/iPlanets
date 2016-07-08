@@ -24,10 +24,12 @@
 		C9286B4D1D28F8B000F08C35 /* Saturn.m in Sources */ = {isa = PBXBuildFile; fileRef = C9286B4C1D28F8B000F08C35 /* Saturn.m */; };
 		C9286B501D28FDD700F08C35 /* Uranus.m in Sources */ = {isa = PBXBuildFile; fileRef = C9286B4F1D28FDD700F08C35 /* Uranus.m */; };
 		C9286B531D28FF3500F08C35 /* Neptune.m in Sources */ = {isa = PBXBuildFile; fileRef = C9286B521D28FF3500F08C35 /* Neptune.m */; };
+		C9C6059B1D29DE0C000A57FC /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C6059A1D29DE0C000A57FC /* FavoritesTableViewController.m */; };
+		C9C6059E1D29DECA000A57FC /* FavoritesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C6059D1D29DECA000A57FC /* FavoritesTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C9286B111D286D9D00F08C35 /* TableViewProtocolsDelegates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewProtocolsDelegates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9286B111D286D9D00F08C35 /* iPlanets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPlanets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9286B151D286D9D00F08C35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9286B171D286D9D00F08C35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C9286B181D286D9D00F08C35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,6 +61,10 @@
 		C9286B4F1D28FDD700F08C35 /* Uranus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Uranus.m; path = ../Uranus.m; sourceTree = "<group>"; };
 		C9286B511D28FF3500F08C35 /* Neptune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neptune.h; sourceTree = "<group>"; };
 		C9286B521D28FF3500F08C35 /* Neptune.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Neptune.m; sourceTree = "<group>"; };
+		C9C605991D29DE0C000A57FC /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewController.h; sourceTree = "<group>"; };
+		C9C6059A1D29DE0C000A57FC /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
+		C9C6059C1D29DECA000A57FC /* FavoritesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewCell.h; sourceTree = "<group>"; };
+		C9C6059D1D29DECA000A57FC /* FavoritesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,14 +83,13 @@
 			children = (
 				C9286B131D286D9D00F08C35 /* TableViewProtocolsDelegates */,
 				C9286B121D286D9D00F08C35 /* Products */,
-				C9286B371D28923200F08C35 /* Planets */,
 			);
 			sourceTree = "<group>";
 		};
 		C9286B121D286D9D00F08C35 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C9286B111D286D9D00F08C35 /* TableViewProtocolsDelegates.app */,
+				C9286B111D286D9D00F08C35 /* iPlanets.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,17 +97,12 @@
 		C9286B131D286D9D00F08C35 /* TableViewProtocolsDelegates */ = {
 			isa = PBXGroup;
 			children = (
-				C9286B171D286D9D00F08C35 /* AppDelegate.h */,
-				C9286B181D286D9D00F08C35 /* AppDelegate.m */,
-				C9286B1A1D286D9D00F08C35 /* ViewController.h */,
-				C9286B1B1D286D9D00F08C35 /* ViewController.m */,
+				C9C605921D29CF4F000A57FC /* Other Files */,
+				C9C605911D29CF18000A57FC /* Active View Controllers */,
 				C9286B1D1D286D9D00F08C35 /* Main.storyboard */,
 				C9286B201D286D9D00F08C35 /* Assets.xcassets */,
-				C9286B221D286D9D00F08C35 /* LaunchScreen.storyboard */,
-				C9286B251D286D9D00F08C35 /* Info.plist */,
+				C9286B371D28923200F08C35 /* Planets */,
 				C9286B141D286D9D00F08C35 /* Supporting Files */,
-				C9286B311D2890AE00F08C35 /* PlanetListTableViewController.h */,
-				C9286B321D2890AE00F08C35 /* PlanetListTableViewController.m */,
 			);
 			path = TableViewProtocolsDelegates;
 			sourceTree = "<group>";
@@ -118,8 +118,6 @@
 		C9286B371D28923200F08C35 /* Planets */ = {
 			isa = PBXGroup;
 			children = (
-				C9286B411D28997300F08C35 /* PlanetInformationViewController.h */,
-				C9286B421D28997300F08C35 /* PlanetInformationViewController.m */,
 				C9286B341D28915100F08C35 /* Planet.h */,
 				C9286B351D28915100F08C35 /* Planet.m */,
 				C9286B511D28FF3500F08C35 /* Neptune.h */,
@@ -140,7 +138,34 @@
 				C9286B4F1D28FDD700F08C35 /* Uranus.m */,
 			);
 			name = Planets;
-			path = TableViewProtocolsDelegates;
+			sourceTree = "<group>";
+		};
+		C9C605911D29CF18000A57FC /* Active View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9286B311D2890AE00F08C35 /* PlanetListTableViewController.h */,
+				C9286B321D2890AE00F08C35 /* PlanetListTableViewController.m */,
+				C9286B411D28997300F08C35 /* PlanetInformationViewController.h */,
+				C9286B421D28997300F08C35 /* PlanetInformationViewController.m */,
+				C9C605991D29DE0C000A57FC /* FavoritesTableViewController.h */,
+				C9C6059A1D29DE0C000A57FC /* FavoritesTableViewController.m */,
+			);
+			name = "Active View Controllers";
+			sourceTree = "<group>";
+		};
+		C9C605921D29CF4F000A57FC /* Other Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9C6059C1D29DECA000A57FC /* FavoritesTableViewCell.h */,
+				C9C6059D1D29DECA000A57FC /* FavoritesTableViewCell.m */,
+				C9286B221D286D9D00F08C35 /* LaunchScreen.storyboard */,
+				C9286B251D286D9D00F08C35 /* Info.plist */,
+				C9286B171D286D9D00F08C35 /* AppDelegate.h */,
+				C9286B181D286D9D00F08C35 /* AppDelegate.m */,
+				C9286B1A1D286D9D00F08C35 /* ViewController.h */,
+				C9286B1B1D286D9D00F08C35 /* ViewController.m */,
+			);
+			name = "Other Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +185,7 @@
 			);
 			name = TableViewProtocolsDelegates;
 			productName = TableViewProtocolsDelegates;
-			productReference = C9286B111D286D9D00F08C35 /* TableViewProtocolsDelegates.app */;
+			productReference = C9286B111D286D9D00F08C35 /* iPlanets.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -177,7 +202,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C9286B0C1D286D9D00F08C35 /* Build configuration list for PBXProject "TableViewProtocolsDelegates" */;
+			buildConfigurationList = C9286B0C1D286D9D00F08C35 /* Build configuration list for PBXProject "iPlanets" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -215,6 +240,8 @@
 			files = (
 				C9286B4D1D28F8B000F08C35 /* Saturn.m in Sources */,
 				C9286B531D28FF3500F08C35 /* Neptune.m in Sources */,
+				C9C6059E1D29DECA000A57FC /* FavoritesTableViewCell.m in Sources */,
+				C9C6059B1D29DE0C000A57FC /* FavoritesTableViewController.m in Sources */,
 				C9286B3A1D28926200F08C35 /* Mars.m in Sources */,
 				C9286B461D28F61600F08C35 /* Mercury.m in Sources */,
 				C9286B361D28915100F08C35 /* Planet.m in Sources */,
@@ -343,7 +370,7 @@
 				INFOPLIST_FILE = TableViewProtocolsDelegates/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theironyard.houston.TableViewProtocolsDelegates;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iPlanets;
 			};
 			name = Debug;
 		};
@@ -354,14 +381,14 @@
 				INFOPLIST_FILE = TableViewProtocolsDelegates/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theironyard.houston.TableViewProtocolsDelegates;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iPlanets;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C9286B0C1D286D9D00F08C35 /* Build configuration list for PBXProject "TableViewProtocolsDelegates" */ = {
+		C9286B0C1D286D9D00F08C35 /* Build configuration list for PBXProject "iPlanets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C9286B261D286D9D00F08C35 /* Debug */,

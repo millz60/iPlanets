@@ -9,7 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "PlanetListTableViewController.h"
 #import "Planet.h"
+#import "FavoritesTableViewController.h"
 
+@protocol PlanetInformationDelegate
+
+-(void) favoritesButtonWasPressed: (Planet *) sentPlanet;
+
+@end
 
 @interface PlanetInformationViewController : UIViewController
 {
@@ -22,12 +28,15 @@
 @property(nonatomic,weak) IBOutlet UILabel *planetSubtitle;
 @property(nonatomic,weak) IBOutlet UIImageView *planetImage;
 
+@property(nonatomic,weak) IBOutlet UIButton *favoritesButton;
+
+@property (nonatomic,weak) id <PlanetInformationDelegate> delegate;
+
 
 // This is required to receive the instance of planet in the PlanetListTableView prepareForSegue method
 
-@property Planet *Planet;
+@property Planet *planet;
 
 -(void) cellWasPressed:(Planet *) planet;
--(void) updateViews:(NSString *) title sun: (NSString *) sun earth: (NSString *) earth subtitle: (NSString *) subtitle image: (NSString *) thePlanetImage;
 
 @end

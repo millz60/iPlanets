@@ -34,13 +34,47 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if([segue.identifier isEqualToString:@"FavoritesTableSegue"]){
+        
+        
+    }
+    
+    
+    
+    
+}
+
+-(IBAction)resetButton:(id)sender{
+    NSUserDefaults *favoritesList = [NSUserDefaults standardUserDefaults];
+    [favoritesList removeObjectForKey:@"FavoritesList"];
+    [favoritesList synchronize];
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 
 @end

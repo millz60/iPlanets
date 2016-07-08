@@ -10,4 +10,28 @@
 
 @implementation Planet
 
+-(instancetype) initWithCoder:(NSCoder * )coder {
+    
+    self = [super init];
+    self.planetName = [coder decodeObjectForKey:@"planetName"];
+    self.imagePath = [coder decodeObjectForKey:@"imagePath"];
+    self.planetDescription = [coder decodeObjectForKey:@"planetDescription"];
+    self.isFavorite = [coder decodeObjectForKey:@"isFavorite"];
+    return self;
+}
+
+-(void) encodeWithCoder:(NSCoder *)coder{
+    
+    [coder encodeObject:self.planetName forKey:@"planetName"];
+    [coder encodeObject:self.imagePath forKey:@"imagePath"];
+    [coder encodeObject:self.planetDescription forKey:@"planetDescription"];
+    [coder encodeObject:self.isFavorite forKey:@"isFavorite"];
+    
+    
+}
+
+
+
+
+
 @end

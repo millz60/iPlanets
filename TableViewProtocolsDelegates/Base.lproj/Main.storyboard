@@ -51,6 +51,9 @@
                                 <state key="normal" title="Favorites">
                                     <color key="titleColor" red="1" green="0.85592324210000004" blue="0.088734132849999994" alpha="0.90793993790000005" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="zFF-xG-GlU" kind="show" identifier="FavoritesTableSegue" id="o6v-QU-nna"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBA-nC-ywS">
                                 <rect key="frame" x="208" y="395" width="183" height="45"/>
@@ -81,7 +84,13 @@
                             <constraint firstItem="DBA-nC-ywS" firstAttribute="trailing" secondItem="kGg-j1-FhJ" secondAttribute="trailing" id="s8s-mv-Sye"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="iPlanets Home" id="ZF6-iA-gMq"/>
+                    <navigationItem key="navigationItem" title="iPlanets Home" id="ZF6-iA-gMq">
+                        <barButtonItem key="leftBarButtonItem" title="Reset Favorites" id="pKW-yZ-bNN">
+                            <connections>
+                                <action selector="resetButton:" destination="BYZ-38-t0r" id="vS8-kM-sO9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,6 +126,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2Y-LX-gi0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2239" y="240"/>
+        </scene>
+        <!--Favorites Table View Controller-->
+        <scene sceneID="Rrd-O5-n6p">
+            <objects>
+                <tableViewController id="zFF-xG-GlU" customClass="FavoritesTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="114" sectionHeaderHeight="28" sectionFooterHeight="28" id="gkz-Lg-AvY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoritesCell" rowHeight="114" id="ctj-qg-w7l" customClass="FavoritesTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="114"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ctj-qg-w7l" id="xmf-PW-uLb">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="114"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Mercury" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXd-tL-pNw">
+                                            <rect key="frame" x="166" y="19" width="168" height="31"/>
+                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="32"/>
+                                            <color key="textColor" red="1" green="0.85592324210000004" blue="0.088734132849999994" alpha="0.90793993790000005" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Planet Subtitle Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8E-6X-Qyx">
+                                            <rect key="frame" x="101" y="63" width="298" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="hOd-3F-krQ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="3D_Mercury" translatesAutoresizingMaskIntoConstraints="NO" id="Loc-yT-3Mh">
+                                            <rect key="frame" x="18" y="8" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Loc-yT-3Mh" secondAttribute="height" multiplier="1:1" id="G88-ym-e9h"/>
+                                                <constraint firstAttribute="width" constant="100" id="j3w-Vm-c3s"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="IXd-tL-pNw" firstAttribute="leading" secondItem="Loc-yT-3Mh" secondAttribute="trailing" constant="48" id="3AJ-zT-bNO"/>
+                                        <constraint firstItem="l8E-6X-Qyx" firstAttribute="top" secondItem="IXd-tL-pNw" secondAttribute="bottom" constant="13" id="9WD-GC-3fy"/>
+                                        <constraint firstItem="IXd-tL-pNw" firstAttribute="trailing" secondItem="l8E-6X-Qyx" secondAttribute="trailing" constant="-65" id="g0T-3O-iHR"/>
+                                        <constraint firstItem="IXd-tL-pNw" firstAttribute="leading" secondItem="l8E-6X-Qyx" secondAttribute="leading" constant="65" id="i5Z-tp-bxc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="PlanetImage" destination="Loc-yT-3Mh" id="vCF-SF-LeO"/>
+                                    <outlet property="subtitleLabel" destination="l8E-6X-Qyx" id="v8k-nS-eDM"/>
+                                    <outlet property="titleLabel" destination="IXd-tL-pNw" id="7zF-eW-7xp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zFF-xG-GlU" id="1i0-RH-pnc"/>
+                            <outlet property="delegate" destination="zFF-xG-GlU" id="f5F-TA-miD"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xVl-OV-C0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2209" y="1071"/>
         </scene>
         <!--Planet Information View Controller-->
         <scene sceneID="ORb-0S-fTj">
@@ -187,13 +260,29 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MH2-Pq-dhS">
+                                <rect key="frame" x="220" y="468" width="161" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="9do-pc-xm8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="19"/>
+                                <state key="normal" title="Add to Favorites">
+                                    <color key="titleColor" red="1" green="0.85592324210000004" blue="0.088734132849999994" alpha="0.90793993790000005" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="favoritesButtonWasPressed:" destination="dcU-Mb-bGW" eventType="touchUpInside" id="IP2-7D-VQ4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="t94-h9-JtH" firstAttribute="top" secondItem="jq8-VF-tDY" secondAttribute="bottom" constant="33" id="3Sy-68-QPa"/>
                             <constraint firstItem="ve3-vh-b3g" firstAttribute="trailing" secondItem="aOC-ib-E1J" secondAttribute="trailing" id="ACc-8q-kWP"/>
+                            <constraint firstItem="Byi-8c-qeT" firstAttribute="top" secondItem="MH2-Pq-dhS" secondAttribute="bottom" constant="102" id="Bbn-Xb-AD2"/>
                             <constraint firstItem="D4b-Ph-zrB" firstAttribute="centerX" secondItem="t94-h9-JtH" secondAttribute="centerX" id="Cfv-D3-jdh"/>
                             <constraint firstItem="yUa-u6-s5K" firstAttribute="top" secondItem="ve3-vh-b3g" secondAttribute="bottom" constant="8" symbolic="YES" id="FbM-u1-SYe"/>
+                            <constraint firstItem="MH2-Pq-dhS" firstAttribute="top" secondItem="aOC-ib-E1J" secondAttribute="bottom" constant="8" symbolic="YES" id="K3X-cR-vP5"/>
+                            <constraint firstItem="MH2-Pq-dhS" firstAttribute="centerX" secondItem="aOC-ib-E1J" secondAttribute="centerX" id="MID-yo-VbS"/>
                             <constraint firstItem="ve3-vh-b3g" firstAttribute="top" secondItem="t94-h9-JtH" secondAttribute="bottom" constant="65" id="MXP-RD-9ek"/>
                             <constraint firstItem="jq8-VF-tDY" firstAttribute="trailing" secondItem="Lf0-8g-Lix" secondAttribute="trailing" id="N9M-si-xBR"/>
                             <constraint firstItem="Lf0-8g-Lix" firstAttribute="centerX" secondItem="t94-h9-JtH" secondAttribute="centerX" id="PtF-Vh-nvV"/>
@@ -216,6 +305,7 @@
                     <connections>
                         <outlet property="distanceFromEarth" destination="ve3-vh-b3g" id="bbg-tP-93g"/>
                         <outlet property="distanceFromSun" destination="aOC-ib-E1J" id="Z2L-Ny-PAU"/>
+                        <outlet property="favoritesButton" destination="MH2-Pq-dhS" id="8LX-VX-eOa"/>
                         <outlet property="planetImage" destination="t94-h9-JtH" id="2hJ-Vo-cwn"/>
                         <outlet property="planetSubtitle" destination="Lf0-8g-Lix" id="CCf-0D-jYG"/>
                         <outlet property="planetTitle" destination="jq8-VF-tDY" id="WDo-Je-rqv"/>
@@ -247,5 +337,6 @@
     </scenes>
     <resources>
         <image name="3D_Earth" width="200" height="200"/>
+        <image name="3D_Mercury" width="1074" height="1074"/>
     </resources>
 </document>

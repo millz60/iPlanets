@@ -18,6 +18,7 @@
     self.distanceFromEarth = 792.25;
     self.planetDescription = @"The Ringed Gas Giant";
     self.imagePath = @"3D_Saturn.png";
+    self.isFavorite = @"NO";
     return self;
     
 }

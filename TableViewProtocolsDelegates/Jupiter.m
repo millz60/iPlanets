@@ -18,6 +18,7 @@
     self.distanceFromEarth = 390.67;
     self.planetDescription = @"A Cloudy Gas Giant";
     self.imagePath = @"3D_Jupiter.png";
+    self.isFavorite = @"NO";
     return self;
     
 }

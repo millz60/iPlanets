@@ -18,6 +18,7 @@
     self.distanceFromEarth = 56.97;
     self.planetDescription = @"The Smallest Planet";
     self.imagePath = @"3D_Mercury.png";
+    self.isFavorite = @"NO";
     return self;
     
 }

@@ -39,6 +39,18 @@
     [_planetList addObject:uranus];
     [_planetList addObject:neptune];
     
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -86,28 +98,28 @@
     UITableViewCell *selectedCell = (UITableViewCell *) sender;
     
     if([selectedCell.textLabel.text isEqualToString:@"Mercury"]){
-        planetInformationViewController.Planet = _planetList[0];
+        planetInformationViewController.planet = _planetList[0];
     }
     else if ([selectedCell.textLabel.text isEqualToString:@"Venus"]){
-        planetInformationViewController.Planet = _planetList[1];
+        planetInformationViewController.planet = _planetList[1];
     }
     else if ([selectedCell.textLabel.text isEqualToString:@"Earth"]){
-        planetInformationViewController.Planet = _planetList[2];
+        planetInformationViewController.planet = _planetList[2];
     }
     else if ([selectedCell.textLabel.text isEqualToString:@"Mars"]){
-        planetInformationViewController.Planet = _planetList[3];
+        planetInformationViewController.planet = _planetList[3];
     }
     else if ([selectedCell.textLabel.text isEqualToString:@"Jupiter"]){
-        planetInformationViewController.Planet = _planetList[4];
+        planetInformationViewController.planet = _planetList[4];
     }
     else if ([selectedCell.textLabel.text isEqualToString:@"Saturn"]){
-        planetInformationViewController.Planet = _planetList[5];
+        planetInformationViewController.planet = _planetList[5];
     }
     else if ([selectedCell.textLabel.text isEqualToString:@"Uranus"]){
-        planetInformationViewController.Planet = _planetList[6];
+        planetInformationViewController.planet = _planetList[6];
     }
     else if ([selectedCell.textLabel.text isEqualToString:@"Neptune"]){
-        planetInformationViewController.Planet = _planetList[7];
+        planetInformationViewController.planet = _planetList[7];
     }
     
     

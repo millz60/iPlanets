@@ -18,6 +18,7 @@
     self.distanceFromEarth = 25.72;
     self.planetDescription = @"The Brightest Planet";
     self.imagePath = @"3D_Venus.png";
+    self.isFavorite = @"NO";
     return self;
     
 }
